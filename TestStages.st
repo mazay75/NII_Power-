@@ -1,4 +1,4 @@
-PROGRAM TemperatureControl
+PROGRAM ControlStages
 VAR
     SP_TEsup : REAL := 20.0; (* Уставка температуры *)
     dT: REAL := 3.0; (* Допустимое отклонение температуры *)
