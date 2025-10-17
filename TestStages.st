@@ -11,10 +11,11 @@ VAR
     SP_TimeOnNextStage : TIME := T#5M; (* Время задержки для включения следующей ступени *)
 END_VAR
 
-(* Основной алгоритм управления температурой *)
+//Управление ступенями 
+
+// Область 1 и 4: работает только первая ступень (ТТР)
 IF (rTEsup >= SP_TEsup - dT) AND (rTEsup <= SP_TEsup + dT) THEN
-    (* Область 1 и 4: работает только первая ступень *)
-    xStage[1] := TRUE; (* ПИД-регулятор *)
+    xStage[1] := TRUE; 
     FOR i := 2 TO NumberStages DO
         xStage[i] := FALSE;
     END_FOR;
