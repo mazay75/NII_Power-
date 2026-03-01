@@ -1,0 +1,5 @@
+https://github.com/DIGI2-FEUP/dinasore_function_blocks
+
+https://github.com/eclipse-4diac/4diac-documentation/blob/main/src/intro/4diacFramework.adoc
+
+https://github.com/eclipse-4diac
